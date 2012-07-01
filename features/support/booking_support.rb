@@ -25,7 +25,7 @@ module BookingSupport
   end
 
   def book_tickets(params)
-    @my_ticket = ReservationSystem.book_tickets(params[:flight], params[:itinerary], params[:passenger])
+    @my_ticket = ReservationSystem.book_ticket(params[:flight], params[:itinerary], params[:passenger_details])
   end
 
   def my_ticket
